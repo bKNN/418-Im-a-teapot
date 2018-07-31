@@ -1,0 +1,266 @@
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+* {
+  transition: all 500ms ease;
+}
+
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Courier";
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.container {
+  font-family: "Consolas", "Courier", fixed-width;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  max-width: 70%;
+}
+
+#intro {
+  padding-top: 120px;
+}
+
+#work {
+  padding-top: 50px;
+  display: none;
+}
+
+#examples {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+h1 {
+  font-size: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 4s steps(60, end);
+}
+
+p {
+  font-size: 30px;
+}
+
+span {
+  animation: blink 1s infinite;
+}
+
+.smaller {
+  font-size: 20px;
+}
+
+.info {
+  font-size: 18px;
+}
+
+.info:nth-of-type(1) {
+  margin-top: 25px;
+}
+
+.btn {
+  background: #000;
+  border-color: transparent;
+  border-radius: 0px;
+  border-width: 2px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 1s ease;
+  margin: 10px 0px;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-project {
+  background: #000;
+  border-color: transparent;
+  border-radius: 0px;
+  border-width: 2px;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 1s ease;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-project:hover {
+  background: #555;
+}
+
+.btn-open-modal {
+  margin: 10px auto;
+}
+
+.btn:hover {
+  background: #777;
+}
+
+#work .smaller {
+  font-size: 15px;
+}
+
+#work section {
+  margin-bottom: 50px;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /*Default hide*/
+  opacity: 0;
+  /*Default transparent*/
+  background-color: black;
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.4);
+  /* Background with opacity*/
+  -webkit-transition: all 0.3s cubic-bezier(0.36, 0.66, 0.04, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.36, 0.66, 0.04, 1);
+  transition: all 0.3s cubic-bezier(0.36, 0.66, 0.04, 1);
+}
+
+.modal.in {
+  opacity: 1;
+  /*Toggle visible*/
+  z-index: 1;
+  /*On top*/
+}
+
+.modal.in .animated-from-top, .modal.in .animated-from-bottom {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  /*Toggle position*/
+}
+
+.modal-content {
+  position: relative;
+  max-width: 40em;
+  margin: 5em auto;
+  padding: 2em;
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.3s cubic-bezier(0.36, 0.66, 0.04, 1);
+  -moz-transition: all 0.3s cubic-bezier(0.36, 0.66, 0.04, 1);
+  transition: all 0.3s cubic-bezier(0.36, 0.66, 0.04, 1);
+}
+
+.main-content {
+  max-height: 450px;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.main-content img {
+  width: 100%;
+}
+
+.animated-from-top {
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  -o-transform: translateY(-200%);
+  transform: translateY(-200%);
+  /*Default over top*/
+}
+
+.animated-from-bottom {
+  -webkit-transform: translateY(200%);
+  -moz-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  -o-transform: translateY(200%);
+  transform: translateY(200%);
+  /*Default over bottom*/
+}
+
+.main-content::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: #F5F5F5;
+}
+
+.main-content::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.main-content::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+@media (max-width: 768px) {
+  #intro {
+    padding-top: 25px;
+  }
+  h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+  p {
+    font-size: 25px;
+  }
+  .modal-content {
+    margin: 25px auto;
+  }
+  .main-content {
+    max-height: 400px;
+  }
+}
