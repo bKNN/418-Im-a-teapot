@@ -1,4 +1,36 @@
+/
+	Link: </swatch/bootstrap.min.css>; rel=preload; as=style
+	Link: </bootstrap/docs/assets/css/bootstrap-responsive.css>; rel=preload; as=style
+	Link: </bootstrap/docs/assets/js/google-code-prettify/prettify.css>; rel=preload; as=style
+	Link: </test/bootswatch.css>; rel=preload; as=style
+	Link: </img/test/7upspot.gif>; rel=preload; as=image
+	Link: </img/test/ie_logo.png>; rel=preload; as=image
+	Link: </img/test/ns_logo.png>; rel=preload; as=image
+	Link: </img/test/noframes.gif>; rel=preload; as=image
+	Link: </img/test/notepad.png>; rel=preload; as=image
+	Link: </img/test/yahooweek.png>; rel=preload; as=image
+	Link: </img/test/community.png>; rel=preload; as=image
+	Link: </img/test/wabwalk.png>; rel=preload; as=image
+	Link: </img/test/webtrips.png>; rel=preload; as=image
+	Link: </img/test/mchammer.gif>; rel=preload; as=image
+	Link: </img/test/new2.gif>; rel=preload; as=image
+	Link: </img/test/drudgesiren.gif>; rel=preload; as=image
+	Link: </img/test/construction.gif>; rel=preload; as=image
+	Link: </img/test/spinningearth.gif>; rel=preload; as=image
+	Link: </img/test/emailme.gif>; rel=preload; as=image
+	Link: </img/test/geocities.jpg>; rel=preload; as=image
+	Link: </img/test/hacker.gif>; rel=preload; as=image
+	Link: </img/test/counter2.gif>; rel=preload; as=image
+	Link: </bootstrap/docs/assets/js/jquery.js>; rel=preload; as=script
+	Link: </bootstrap/docs/assets/js/google-code-prettify/prettify.js>; rel=preload; as=script
+	Link: </bootstrap/docs/assets/js/le-js-c-nul.min.js>; rel=preload; as=script
+	Link: </img/microfab.png>; rel=preload; as=image
+	Link: </img/stars.gif>; rel=preload; as=image
+	Link: </img/glyphicons-halflings.png>; rel=preload; as=image
+	Link: </img/rainbow.gif>; rel=preload; as=image
+	
 /*
+  Cache-Control: public, max-age=360000
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
