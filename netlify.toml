@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "hugo --contentDir /blog"
+command = "hugo --contentDir blog"
 
 [context.production.environment]
 HUGO_VERSION = "0.51"
