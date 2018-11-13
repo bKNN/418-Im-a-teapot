@@ -1,9 +1,9 @@
 [build]
-  command = "npm run build"
+  command = "npm run --prefix blog build"
   publish = "dist"
 
 [context.deploy-preview]
-  command = "npm run build-preview"
+  command = "npm run --prefix blog build-preview"
 
 [[headers]]
     for = "/*" # This defines which paths this specific [[headers]] block will cover.
