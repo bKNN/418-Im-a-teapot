@@ -1,5 +1,5 @@
 [build]
-base = "/"
+base = "public"
 publish = "blog/public"
 command = "hugo"
 
