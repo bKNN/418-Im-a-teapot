@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: pierrickdeniel.fr
-Token: edf140ee386340ec6837c4f2db6deebd411fcfcb750f8819bcf621eb22cf7620
